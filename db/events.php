@@ -15,5 +15,6 @@ $observers = array(
     array(
         'eventname' => 'core\event\user_created',
         'callback' => 'local_elggsync\observer::create_user_in_elgg',
+        'priority'    => 999,
     ),
 );
