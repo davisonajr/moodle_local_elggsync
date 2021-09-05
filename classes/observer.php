@@ -15,7 +15,7 @@ class observer {
     public static function create_user_in_elgg(\core\event\user_created $event) {
         global $DB,$CFG;
         $config = get_config('local_elggsync');
-        if($config->enableintegration === 1){
+        if($config->enableintegration == 1){
             require_once('curl.php');
             // get user created info
             $eventdata = $event->get_data();

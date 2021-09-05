@@ -64,6 +64,24 @@ if ($hassiteconfig) {
 		PARAM_TEXT
 		) 
 	);
+	$settings->add( new admin_setting_configtext(
+		
+		// This is the reference you will use to your configuration
+		'local_elggsync/moodleapikey',
+	
+		// This is the friendly title for the config, which will be displayed
+		get_string('moodleapikey','local_elggsync'),
+	
+		// This is helper text for this config field
+		get_string('moodleapikeyhelper','local_elggsync'),
+	
+		// This is the default value
+		'',
+	
+		// This is the type of Parameter this config is
+		PARAM_TEXT
+		) 
+	);
 	// Create 
 
 }
